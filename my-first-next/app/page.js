@@ -8,7 +8,7 @@ export default function Home() {
   
       <main className="grid">
         <Image src={heroImage} alt="Afbeelding van Next.js" width={700} height={400}/>
-      <div class="welcome">
+      <div className="welcome">
         <h2>Introduction to Next.js</h2>
         <p>
           Next.js is a React framework that enables server-side rendering,
