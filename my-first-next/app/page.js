@@ -2,102 +2,72 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <div>
+    <header class="grid">
+      <h1>NEXT.js</h1>
+      <nav>
+        <a href="">Showcase </a>
+        <a href="">Docs</a>
+        <a href="">Blog</a>
+        <a href="">Templates</a>
+        <a href="">Enterprise</a>
+      </nav>
+    </header>
+    <main class="grid">
+      <img src="images/nextjs.png" alt="Afbeelding van Next.js" />
+      <div class="welcome">
+        <h2>Introduction to Next.js</h2>
+        <p>
+          Next.js is a React framework that enables server-side rendering,
+          static site generation, and full-stack capabilities for building
+          modern web applications. It offers features like API routes, image
+          optimization, and built-in routing, making development more
+          efficient. With its performance optimizations and seamless
+          integration with backend services, Next.js is widely used for
+          scalable and SEO-friendly web projects.
+        </p>
+      </div>
+      <h2>Key Features</h2>
+      <div class="card">
+        <h3>Server-Side Rendering (SSR) & Static Site Generation (SSG)</h3>
+        <p>
+          SSR dynamically renders pages on each request, improving SEO and
+          ensuring fresh data. This is useful for applications that need
+          up-to-date content, like news websites.
+        </p>
+        <p>
+          SSG pre-renders pages at build time, making them faster and more
+          efficient. It's ideal for blogs, e-commerce, and landing pages where
+          content doesn’t change frequently.
+        </p>
+      </div>
+      <div class="card">
+        <h3>API Routes & Built-in Backend Functionality</h3>
+        <p>
+          Next.js allows you to create backend API endpoints within the
+          project using serverless functions. These endpoints can handle
+          database queries, authentication, and other backend tasks.
+        </p>
+        <p>
+          This eliminates the need for a separate backend service, simplifying
+          deployment and maintenance. API routes are highly scalable and work
+          seamlessly with frontend components.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Automatic Code Splitting & Optimization</h3>
+        <p>
+          Next.js automatically splits JavaScript bundles so users load only
+          what's needed for a specific page.
+        </p>
+        <p>
+          This reduces initial load times and improves user experience. It
+          also optimizes assets like images and scripts, ensuring faster
+          performance. Features like lazy loading and caching enhance
+          efficiency further.
+        </p>
+      </div>
+    </main>
+  </div>
   );
 }
