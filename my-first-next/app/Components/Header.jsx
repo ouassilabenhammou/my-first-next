@@ -8,11 +8,11 @@ export default function Header() {
         <h1>NEXT.js</h1>
       </Link>
       <nav>
-        <Link href="/Showcase">Showcase</Link>
-        <Link href="/Docs">Docs</Link>
-        <Link href="/Blog">Blog</Link>
-        <Link href="/Templates">Templates</Link>
-        <Link href="/Enterprise">Enterprise</Link>
+        <Link href="/showcase">Showcase</Link>
+        <Link href="/docs">Docs</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/templates">Templates</Link>
+        <Link href="/enterprise">Enterprise</Link>
       </nav>
     </header>
   );
