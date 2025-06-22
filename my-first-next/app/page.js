@@ -1,20 +1,13 @@
 import Image from "next/image";
+import heroImage from "../public/nextjs.png"
 
 export default function Home() {
   return (
+  
     <div>
-    <header class="grid">
-      <h1>NEXT.js</h1>
-      <nav>
-        <a href="">Showcase </a>
-        <a href="">Docs</a>
-        <a href="">Blog</a>
-        <a href="">Templates</a>
-        <a href="">Enterprise</a>
-      </nav>
-    </header>
-    <main class="grid">
-      <img src="images/nextjs.png" alt="Afbeelding van Next.js" />
+  
+      <main className="grid">
+        <Image src={heroImage} alt="Afbeelding van Next.js" width={700} height={400}/>
       <div class="welcome">
         <h2>Introduction to Next.js</h2>
         <p>
@@ -28,7 +21,7 @@ export default function Home() {
         </p>
       </div>
       <h2>Key Features</h2>
-      <div class="card">
+      <div className="card">
         <h3>Server-Side Rendering (SSR) & Static Site Generation (SSG)</h3>
         <p>
           SSR dynamically renders pages on each request, improving SEO and
@@ -41,7 +34,7 @@ export default function Home() {
           content doesn’t change frequently.
         </p>
       </div>
-      <div class="card">
+      <div className="card">
         <h3>API Routes & Built-in Backend Functionality</h3>
         <p>
           Next.js allows you to create backend API endpoints within the
@@ -54,7 +47,7 @@ export default function Home() {
           seamlessly with frontend components.
         </p>
       </div>
-      <div class="card">
+      <div className="card">
         <h3>Automatic Code Splitting & Optimization</h3>
         <p>
           Next.js automatically splits JavaScript bundles so users load only
