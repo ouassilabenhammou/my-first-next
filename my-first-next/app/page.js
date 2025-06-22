@@ -57,7 +57,7 @@ export default function Home() {
           This reduces initial load times and improves user experience. It
           also optimizes assets like images and scripts, ensuring faster
           performance. Features like lazy loading and caching enhance
-          efficiency further.
+          efficiency further. 
         </p>
       </div>
     </main>
